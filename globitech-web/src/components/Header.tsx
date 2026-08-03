@@ -23,17 +23,25 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || open
           ? "bg-paper/90 shadow-[0_1px_0_var(--line)] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
         <a href="#top" className="group flex items-baseline gap-2">
-          <span className="font-display text-lg font-extrabold tracking-tight text-ink md:text-xl">
+          <span
+            className={`font-display text-lg font-extrabold tracking-tight md:text-xl ${
+              scrolled || open ? "text-ink" : "text-paper"
+            }`}
+          >
             Globitech
           </span>
-          <span className="hidden text-xs font-medium uppercase tracking-[0.18em] text-ink-soft/70 sm:inline">
+          <span
+            className={`hidden text-xs font-medium uppercase tracking-[0.18em] sm:inline ${
+              scrolled || open ? "text-ink-soft/70" : "text-paper/70"
+            }`}
+          >
             Cyber Solutions
           </span>
         </a>
@@ -43,14 +51,22 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink-soft transition-colors hover:text-teal"
+              className={`text-sm font-medium transition-colors ${
+                scrolled
+                  ? "text-ink-soft hover:text-teal"
+                  : "text-paper/85 hover:text-paper"
+              }`}
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:+233508997295"
-            className="bg-ink px-4 py-2 text-sm font-semibold text-paper transition-colors hover:bg-teal"
+            className={`px-4 py-2 text-sm font-semibold transition-colors ${
+              scrolled
+                ? "bg-ink text-paper hover:bg-teal"
+                : "bg-paper text-ink hover:bg-sand"
+            }`}
           >
             Call us
           </a>
@@ -65,19 +81,19 @@ export function Header() {
         >
           <span className="relative block h-4 w-5">
             <span
-              className={`absolute left-0 h-0.5 w-full bg-ink transition-all ${
-                open ? "top-1.5 rotate-45" : "top-0"
-              }`}
+              className={`absolute left-0 h-0.5 w-full transition-all ${
+                scrolled || open ? "bg-ink" : "bg-paper"
+              } ${open ? "top-1.5 rotate-45" : "top-0"}`}
             />
             <span
-              className={`absolute left-0 top-1.5 h-0.5 w-full bg-ink transition-opacity ${
-                open ? "opacity-0" : "opacity-100"
-              }`}
+              className={`absolute left-0 top-1.5 h-0.5 w-full transition-opacity ${
+                scrolled || open ? "bg-ink" : "bg-paper"
+              } ${open ? "opacity-0" : "opacity-100"}`}
             />
             <span
-              className={`absolute left-0 h-0.5 w-full bg-ink transition-all ${
-                open ? "top-1.5 -rotate-45" : "top-3"
-              }`}
+              className={`absolute left-0 h-0.5 w-full transition-all ${
+                scrolled || open ? "bg-ink" : "bg-paper"
+              } ${open ? "top-1.5 -rotate-45" : "top-3"}`}
             />
           </span>
         </button>
