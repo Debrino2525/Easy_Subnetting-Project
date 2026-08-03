@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Logo } from "./Logo";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -20,30 +21,33 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const onDark = !(scrolled || open);
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? "bg-paper/90 shadow-[0_1px_0_var(--line)] backdrop-blur-md"
+          ? "bg-ink/95 shadow-[0_1px_0_var(--line-light)] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <a href="#top" className="group flex items-baseline gap-2">
-          <span
-            className={`font-display text-lg font-extrabold tracking-tight md:text-xl ${
-              scrolled || open ? "text-ink" : "text-paper"
-            }`}
-          >
-            Globitech
-          </span>
-          <span
-            className={`hidden text-xs font-medium uppercase tracking-[0.18em] sm:inline ${
-              scrolled || open ? "text-ink-soft/70" : "text-paper/70"
-            }`}
-          >
-            Cyber Solutions
-          </span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 md:px-8">
+        <a href="#top" className="flex items-center gap-2" aria-label="Globitech Ghana home">
+          {onDark ? (
+            <Logo priority />
+          ) : (
+            <span className="flex items-center gap-2.5">
+              <Logo variant="mark" priority />
+              <span className="leading-none">
+                <span className="font-display block text-sm font-extrabold tracking-[0.08em] text-paper md:text-base">
+                  GLOBITECH
+                </span>
+                <span className="mt-0.5 block text-[10px] font-light uppercase tracking-[0.35em] text-paper/70">
+                  Ghana
+                </span>
+              </span>
+            </span>
+          )}
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
@@ -51,22 +55,14 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                scrolled
-                  ? "text-ink-soft hover:text-teal"
-                  : "text-paper/85 hover:text-paper"
-              }`}
+              className="text-sm font-medium text-paper/80 transition-colors hover:text-blue"
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:+233508997295"
-            className={`px-4 py-2 text-sm font-semibold transition-colors ${
-              scrolled
-                ? "bg-ink text-paper hover:bg-teal"
-                : "bg-paper text-ink hover:bg-sand"
-            }`}
+            className="bg-orange px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-green"
           >
             Call us
           </a>
@@ -81,19 +77,19 @@ export function Header() {
         >
           <span className="relative block h-4 w-5">
             <span
-              className={`absolute left-0 h-0.5 w-full transition-all ${
-                scrolled || open ? "bg-ink" : "bg-paper"
-              } ${open ? "top-1.5 rotate-45" : "top-0"}`}
+              className={`absolute left-0 h-0.5 w-full bg-paper transition-all ${
+                open ? "top-1.5 rotate-45" : "top-0"
+              }`}
             />
             <span
-              className={`absolute left-0 top-1.5 h-0.5 w-full transition-opacity ${
-                scrolled || open ? "bg-ink" : "bg-paper"
-              } ${open ? "opacity-0" : "opacity-100"}`}
+              className={`absolute left-0 top-1.5 h-0.5 w-full bg-paper transition-opacity ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
             />
             <span
-              className={`absolute left-0 h-0.5 w-full transition-all ${
-                scrolled || open ? "bg-ink" : "bg-paper"
-              } ${open ? "top-1.5 -rotate-45" : "top-3"}`}
+              className={`absolute left-0 h-0.5 w-full bg-paper transition-all ${
+                open ? "top-1.5 -rotate-45" : "top-3"
+              }`}
             />
           </span>
         </button>
@@ -101,7 +97,7 @@ export function Header() {
 
       {open && (
         <nav
-          className="border-t border-line bg-paper px-5 py-4 md:hidden"
+          className="border-t border-line-light bg-ink px-5 py-4 md:hidden"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-3">
@@ -109,7 +105,7 @@ export function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block py-2 text-base font-medium text-ink"
+                  className="block py-2 text-base font-medium text-paper"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -119,7 +115,7 @@ export function Header() {
             <li>
               <a
                 href="tel:+233508997295"
-                className="mt-2 inline-block bg-ink px-4 py-2.5 text-sm font-semibold text-paper"
+                className="mt-2 inline-block bg-orange px-4 py-2.5 text-sm font-semibold text-ink"
                 onClick={() => setOpen(false)}
               >
                 Call us

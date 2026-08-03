@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0b1f2a;
-  --ink-soft: #1a3544;
-  --mist: #e8f0f2;
-  --paper: #f4f8f9;
-  --teal: #0a6b5c;
-  --teal-bright: #0f8a75;
-  --sand: #c4a574;
-  --line: rgba(11, 31, 42, 0.12);
+  --ink: #050505;
+  --ink-soft: #1a1a1a;
+  --mist: #e8eef2;
+  --paper: #f5f7f8;
+  --blue: #00aeef;
+  --green: #8dc63f;
+  --orange: #f7941d;
+  --line: rgba(5, 5, 5, 0.12);
+  --line-light: rgba(255, 255, 255, 0.14);
   --background: var(--paper);
   --foreground: var(--ink);
 }
@@ -20,10 +21,11 @@
   --color-ink-soft: var(--ink-soft);
   --color-mist: var(--mist);
   --color-paper: var(--paper);
-  --color-teal: var(--teal);
-  --color-teal-bright: var(--teal-bright);
-  --color-sand: var(--sand);
+  --color-blue: var(--blue);
+  --color-green: var(--green);
+  --color-orange: var(--orange);
   --color-line: var(--line);
+  --color-line-light: var(--line-light);
   --font-display: var(--font-syne);
   --font-sans: var(--font-figtree);
 }
@@ -39,7 +41,7 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--teal) 35%, white);
+  background: color-mix(in srgb, var(--blue) 40%, white);
   color: var(--ink);
 }
 
@@ -49,9 +51,10 @@ body {
 
 .atmosphere {
   background:
-    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(10, 107, 92, 0.14), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 90% 20%, rgba(196, 165, 116, 0.12), transparent 50%),
-    linear-gradient(165deg, #f4f8f9 0%, #e8f0f2 45%, #dce8eb 100%);
+    radial-gradient(ellipse 70% 45% at 8% 0%, rgba(0, 174, 239, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 92% 15%, rgba(141, 198, 63, 0.1), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 60% 100%, rgba(247, 148, 29, 0.08), transparent 50%),
+    linear-gradient(165deg, #f5f7f8 0%, #e8eef2 50%, #dfe8ec 100%);
 }
 
 .grid-overlay {
@@ -98,10 +101,10 @@ body {
     opacity: 0;
   }
   20% {
-    opacity: 0.45;
+    opacity: 0.4;
   }
   80% {
-    opacity: 0.45;
+    opacity: 0.4;
   }
   100% {
     transform: translateY(100%);
@@ -140,7 +143,7 @@ body {
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(15, 138, 117, 0.18),
+    rgba(0, 174, 239, 0.2),
     transparent
   );
   height: 28%;

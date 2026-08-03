@@ -15,7 +15,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Globitech Cyber Solutions | Takoradi, Ghana",
+  title: "Globitech Ghana | Cyber Solutions — Takoradi",
   description:
     "Cybersecurity services from Globitech Cyber Solutions in Takoradi, Western Region, Ghana — protecting organizations across West and East Africa.",
   keywords: [
@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     "security consulting",
     "West Africa",
   ],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

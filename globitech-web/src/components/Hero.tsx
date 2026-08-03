@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { Logo } from "./Logo";
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[100svh] overflow-hidden text-paper"
+      className="relative min-h-[100svh] overflow-hidden bg-ink text-paper"
     >
       <div className="absolute inset-0">
         <Image
@@ -12,21 +13,28 @@ export function Hero() {
           alt="Secure digital infrastructure and network operations"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center opacity-45"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/45" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/50" />
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            background:
+              "radial-gradient(ellipse 50% 40% at 80% 20%, rgba(0,174,239,0.35), transparent 60%), radial-gradient(ellipse 40% 35% at 20% 80%, rgba(141,198,63,0.2), transparent 55%), radial-gradient(ellipse 30% 25% at 70% 70%, rgba(247,148,29,0.18), transparent 50%)",
+          }}
+          aria-hidden
+        />
         <div className="hero-scan absolute inset-0 opacity-60" aria-hidden />
       </div>
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:justify-center md:px-8 md:pb-24 md:pt-32">
-        <p className="animate-rise font-display text-4xl font-extrabold leading-[0.95] tracking-tight text-paper sm:text-5xl md:text-6xl lg:text-7xl">
-          Globitech
-          <span className="mt-1 block text-sand md:mt-2">Cyber Solutions</span>
-        </p>
+        <div className="animate-rise">
+          <Logo className="!h-14 md:!h-20" priority />
+        </div>
 
-        <h1 className="animate-rise-delay-1 mt-6 max-w-xl text-xl font-medium leading-snug text-paper/95 sm:text-2xl md:text-3xl">
+        <h1 className="animate-rise-delay-1 mt-8 max-w-xl text-2xl font-medium leading-snug text-paper sm:text-3xl md:text-4xl">
           Cybersecurity built for the African enterprise.
         </h1>
 
@@ -38,13 +46,13 @@ export function Hero() {
         <div className="animate-rise-delay-3 mt-8 flex flex-wrap items-center gap-3">
           <a
             href="#contact"
-            className="bg-teal-bright px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-teal"
+            className="bg-orange px-6 py-3.5 text-sm font-semibold text-ink transition-colors hover:bg-green"
           >
             Talk to our team
           </a>
           <a
             href="#services"
-            className="border border-paper/35 px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:border-paper hover:bg-paper/10"
+            className="border border-paper/35 px-6 py-3.5 text-sm font-semibold text-paper transition-colors hover:border-blue hover:text-blue"
           >
             Explore services
           </a>
