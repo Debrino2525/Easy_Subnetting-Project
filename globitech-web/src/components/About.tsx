@@ -43,6 +43,12 @@ export function About() {
             >
               055 132 4845
             </a>
+            <a
+              href="mailto:support@globitechcybersolutions.com"
+              className="block font-semibold text-blue transition-colors hover:text-green"
+            >
+              support@globitechcybersolutions.com
+            </a>
           </div>
         </aside>
       </div>

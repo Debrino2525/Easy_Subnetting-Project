@@ -29,6 +29,12 @@ export function Footer() {
           >
             Download HTML
           </a>
+          <a
+            href="mailto:support@globitechcybersolutions.com"
+            className="mb-3 block text-blue hover:text-green"
+          >
+            support@globitechcybersolutions.com
+          </a>
           <p>© {year} Globitech Ghana</p>
           <p className="mt-1">All rights reserved.</p>
         </div>

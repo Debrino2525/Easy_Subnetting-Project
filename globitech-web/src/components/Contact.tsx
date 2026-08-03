@@ -10,12 +10,13 @@ export function Contact() {
             Ready to strengthen your defences?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft/80">
-            Call Globitech Cyber Solutions — we will discuss your environment,
-            priorities, and the fastest path to a stronger security posture.
+            Call or email Globitech Cyber Solutions — we will discuss your
+            environment, priorities, and the fastest path to a stronger security
+            posture.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <a
             href="tel:+233508997295"
             className="group border border-line bg-paper/80 px-6 py-7 transition-colors hover:border-blue hover:bg-paper"
@@ -38,7 +39,18 @@ export function Contact() {
               055 132 4845
             </p>
           </a>
-          <div className="border border-line bg-paper/80 px-6 py-7 sm:col-span-2 lg:col-span-1">
+          <a
+            href="mailto:support@globitechcybersolutions.com"
+            className="group border border-line bg-paper/80 px-6 py-7 transition-colors hover:border-orange hover:bg-paper"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink-soft/65">
+              Support email
+            </p>
+            <p className="font-display mt-3 break-all text-xl font-bold text-ink transition-colors group-hover:text-orange md:text-2xl">
+              support@globitechcybersolutions.com
+            </p>
+          </a>
+          <div className="border border-line bg-paper/80 px-6 py-7">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-ink-soft/65">
               Office
             </p>
