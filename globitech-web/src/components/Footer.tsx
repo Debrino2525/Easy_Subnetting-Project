@@ -10,7 +10,16 @@ export function Footer() {
           <Logo className="!h-12 md:!h-14" />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-mist/60">
             Globitech Cyber Solutions — cybersecurity from Takoradi, Western
-            Region, Ghana, trusted across West and East Africa.
+            Region, Ghana, trusted across West and East Africa. Owner of{" "}
+            <a
+              href="https://sisters-haven.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue hover:text-green"
+            >
+              WO~MENS HAVEN
+            </a>
+            .
           </p>
         </div>
         <div className="text-sm text-mist/50">

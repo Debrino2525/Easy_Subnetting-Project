@@ -17,12 +17,14 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Globitech Ghana | Cyber Solutions — Takoradi",
   description:
-    "Cybersecurity services from Globitech Cyber Solutions in Takoradi, Western Region, Ghana — protecting organizations across West and East Africa.",
+    "Globitech Cyber Solutions — cybersecurity services from Takoradi, Ghana, and owner of WO~MENS HAVEN (sisters-haven.com).",
   keywords: [
     "cybersecurity",
     "Ghana",
     "Takoradi",
     "Globitech",
+    "WO~MENS HAVEN",
+    "sisters-haven",
     "security consulting",
     "West Africa",
   ],
