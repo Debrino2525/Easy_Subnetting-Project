@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" fill="none" role="img" aria-label="Globitech Ghana">
+  <g transform="translate(8,20) scale(1.05)">
+    <path d="M18 78C34 70 48 52 58 28C62 42 72 58 92 68C70 66 48 70 18 78Z" fill="#F7941D"/>
+    <path d="M22 62C42 52 58 34 68 10C74 28 88 46 112 54C86 54 58 56 22 62Z" fill="#8DC63F"/>
+    <path d="M28 46C50 36 66 20 74 0C82 18 98 34 120 40C92 42 62 42 28 46Z" fill="#00AEEF"/>
+    <path d="M14 90C28 84 40 72 48 54C52 66 60 78 78 86C58 84 38 86 14 90Z" fill="#F7941D"/>
+    <path d="M10 102C22 98 32 90 38 76C42 86 50 96 66 102C48 100 30 100 10 102Z" fill="#F7941D" opacity="0.9"/>
+  </g>
+  <text x="160" y="88" fill="#FFFFFF" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="2">GLOBITECH</text>
+  <text x="162" y="126" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="300" letter-spacing="14">GHANA</text>
+</svg>
