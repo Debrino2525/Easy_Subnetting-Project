@@ -14,6 +14,13 @@ export function Footer() {
           </p>
         </div>
         <div className="text-sm text-mist/50">
+          <a
+            href="/globitech.html"
+            download="Globitech-Cyber-Solutions.html"
+            className="mb-4 inline-block border border-line-light px-4 py-2 font-medium text-paper transition-colors hover:border-blue hover:text-blue"
+          >
+            Download HTML
+          </a>
           <p>© {year} Globitech Ghana</p>
           <p className="mt-1">All rights reserved.</p>
         </div>
