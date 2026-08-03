@@ -56,6 +56,12 @@ export function Hero() {
           >
             Explore services
           </a>
+          <a
+            href="/download"
+            className="border border-blue/50 px-6 py-3.5 text-sm font-semibold text-blue transition-colors hover:border-blue hover:bg-blue/10"
+          >
+            Download HTML
+          </a>
         </div>
       </div>
     </section>
