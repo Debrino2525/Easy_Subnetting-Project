@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:static": "node scripts/sync-static.mjs",
+    "deploy:cloudflare": "npm run sync:static && npx wrangler pages deploy cloudflare-static --project-name=globitech-cyber-solutions"
   },
   "dependencies": {
     "next": "16.2.12",
