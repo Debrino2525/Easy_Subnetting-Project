@@ -1,19 +1,22 @@
-# Family Circle — Brand Assets
+# WO~MENS HAVEN — Brand Assets
 
-Icon and logo for a family community application representing women, men, fathers, and mothers with kids.
+Icon and logo for **WO~MENS HAVEN**.
+
+**Motto:** A Health Community for Everyone
 
 ## Files
 
 | File | Use |
 |------|-----|
-| `family-community-app-icon.png` | Square app icon (iOS / Android / favicon) |
-| `family-community-logo.png` | Horizontal logo with wordmark |
+| `womens-haven-app-icon.png` | Square app icon (iOS / Android / favicon) |
+| `womens-haven-logo.png` | Horizontal logo with wordmark |
 
 ## Design notes
 
-- **Theme:** Inclusive family community — women, men, parents with children
+- **Theme:** Inclusive health community — women, men, parents with children
 - **Background:** Plum `#5C3D4E`
 - **Accents (sparingly):** Dusty rose `#C4898A`, sage `#7F9B7E`
 - **Foreground:** Soft cream / off-white for figures and wordmark
 - **Style:** Flat vector, readable at small sizes
-- **Wordmark:** FAMILY CIRCLE — *Together for Everyone*
+- **Wordmark:** WO~MENS HAVEN
+- **Tagline:** A Health Community for Everyone
