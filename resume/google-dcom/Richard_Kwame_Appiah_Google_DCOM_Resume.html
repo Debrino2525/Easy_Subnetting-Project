@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Richard Kwame Appiah — Google Data Center Operations Manager Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a2332;
+      --muted: #4a5568;
+      --line: #c5ced9;
+      --accent: #174ea6;
+      --bg: #f6f8fb;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "IBM Plex Sans", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 50% at 8% 0%, #d9e4f5 0%, transparent 55%),
+        radial-gradient(ellipse 55% 40% at 100% 100%, #e7ece8 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.35;
+      font-size: 9.4pt;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .page {
+      max-width: 8.5in;
+      margin: 0 auto;
+      background: var(--paper);
+      padding: 0.45in 0.52in 0.4in;
+      box-shadow: 0 12px 40px rgba(26, 35, 50, 0.12);
+      border: 1px solid rgba(26, 35, 50, 0.06);
+    }
+
+    header {
+      border-bottom: 2.5px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+
+    h1 {
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.58rem;
+      font-weight: 700;
+      letter-spacing: 0.015em;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      margin-top: 0.16rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      margin-top: 0.35rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.15rem 0.8rem;
+      color: var(--muted);
+      font-size: 0.74rem;
+    }
+
+    .contact a { color: var(--muted); text-decoration: none; }
+
+    section { margin-bottom: 0.58rem; }
+
+    h2 {
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.18rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .summary { font-size: 0.82rem; }
+
+    .skills-grid { display: grid; gap: 0.18rem; }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 9.2rem 1fr;
+      gap: 0.35rem;
+      align-items: baseline;
+    }
+
+    .skill-label { font-weight: 600; font-size: 0.74rem; }
+    .skill-items { font-size: 0.74rem; color: var(--muted); }
+
+    .job { margin-bottom: 0.42rem; }
+
+    .job-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.1rem 0.7rem;
+    }
+
+    .job-title { font-weight: 700; font-size: 0.84rem; }
+    .job-dates { font-size: 0.7rem; font-weight: 500; color: var(--muted); white-space: nowrap; }
+    .job-company { font-size: 0.74rem; color: var(--accent); font-weight: 500; margin: 0.04rem 0 0.18rem; }
+
+    ul {
+      padding-left: 0.9rem;
+      display: grid;
+      gap: 0.1rem;
+    }
+
+    li { font-size: 0.76rem; }
+    li::marker { color: var(--accent); }
+
+    .compact-list {
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .compact-list strong { color: var(--ink); font-weight: 600; }
+
+    .cert-list {
+      columns: 2;
+      column-gap: 0.9rem;
+      padding-left: 0.9rem;
+    }
+
+    .cert-list li {
+      break-inside: avoid;
+      font-size: 0.74rem;
+      margin-bottom: 0.12rem;
+    }
+
+    .actions {
+      max-width: 8.5in;
+      margin: 0 auto 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .actions p { color: var(--muted); font-size: 0.85rem; }
+
+    .btn {
+      appearance: none;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.55rem 1rem;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    @media print {
+      body { background: none; padding: 0; font-size: 9pt; }
+      .actions { display: none; }
+      .page {
+        box-shadow: none;
+        border: none;
+        max-width: none;
+        padding: 0.32in 0.42in;
+      }
+      a { color: inherit; text-decoration: none; }
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 1rem 0.75rem 2rem; }
+      .page { padding: 1.05rem; }
+      .skill-row { grid-template-columns: 1fr; }
+      .cert-list { columns: 1; }
+      h1 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions">
+    <p>Google Data Center Operations Manager resume — <strong>Print → Save as PDF</strong>.</p>
+    <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <article class="page">
+    <header>
+      <h1>Richard Kwame Appiah</h1>
+      <p class="tagline">Data Center &amp; Infrastructure Operations · Server · Network · Vendor Delivery</p>
+      <div class="contact">
+        <span>Takoradi &amp; Accra, Ghana · Open to relocation to Tel Aviv, Israel</span>
+        <a href="mailto:Richard.k.appiah.ca@gmail.com">Richard.k.appiah.ca@gmail.com</a>
+        <a href="tel:+233508997295">+233 508 997 295</a>
+        <span>Shift / non-standard hours · Travel up to 50%</span>
+        <span>English · Twi · Fanti</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Infrastructure and data center operations professional with 9+ years across computing hardware,
+        networking, operating systems, and critical-facility support in financial, telecom, and national-grid
+        environments. Experienced coordinating vendors and contractors for equipment delivery and installation,
+        leading technical incident response, and executing operational and security procedures that protect
+        uptime and availability. Background includes data center NOC support (power, cooling, cabling, hardware),
+        multi-country delivery work, staff enablement, and compliance programs aligned to ISO/IEC 27001 and
+        critical-infrastructure standards. Seeking to apply this experience as a Data Center Operations Manager
+        supporting Google Global Server Operations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Data Center Ops</span>
+          <span class="skill-items">Facility monitoring (power, cooling, cabling, hardware) · Server/hardware support · Uptime &amp; availability · Preventative maintenance mindset · Compute &amp; network lifecycle support</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Delivery &amp; Vendors</span>
+          <span class="skill-items">Vendor &amp; contractor coordination · Installation follow-through · Escalation management · Cross-site / multi-country delivery · Trend tracking &amp; operational improvement</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Networking &amp; Systems</span>
+          <span class="skill-items">Network defense · Active Directory · Endpoint protection · Linux/Windows environments · Backup/restore · Patching · SIEM/NOC monitoring</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Safety &amp; Compliance</span>
+          <span class="skill-items">Operational &amp; security procedures · Physical security · ISO/IEC 27001 · Risk &amp; non-conformance tracking · EHS-adjacent facility awareness (EPA/power collaboration)</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <p class="job-title">Senior Systems &amp; Applications Specialist / Data Center NOC Support</p>
+          <p class="job-dates">Jan 2023 – Present</p>
+        </div>
+        <p class="job-company">Bank of Ghana (FICSOC) — Virtual InfoSec Africa · Accra, Ghana</p>
+        <ul>
+          <li>Monitor data center infrastructure—including power, cooling, cabling, and hardware—to help maintain facility uptime, availability, and security for critical systems.</li>
+          <li>Track network and application health with SIEM/NOC tooling; identify anomalies early and drive timely remediation.</li>
+          <li>Lead end-to-end technical incident investigations, maintain operational documentation, and support reporting on trends and outcomes.</li>
+          <li>Provide escalation support during high-severity incidents and coordinate response across technical and operational stakeholders.</li>
+          <li>Coordinate vendors and contractors on equipment delivery and installation, keeping infrastructure work aligned to schedules and site requirements.</li>
+          <li>Maintain and reinforce operational and security procedures; use monitoring and incident trends to identify improvement opportunities.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <p class="job-title">Penetration Tester / External IT Audit Representative</p>
+          <p class="job-dates">Jul 2019 – Nov 2022</p>
+        </div>
+        <p class="job-company">Sophies Group · Ghana, Nigeria &amp; Tanzania</p>
+        <ul>
+          <li>Delivered technical assessments and remediation guidance across multiple countries in a regional/global delivery model.</li>
+          <li>Audited system configurations, access controls, and firewall policies; assessed physical security of critical infrastructure.</li>
+          <li>Recommended perimeter/endpoint and breach-detection improvements that strengthened operational resilience.</li>
+          <li>Trained 60+ staff on security awareness and cyber hygiene, reinforcing on-site security culture through coaching and enablement.</li>
+          <li>Supported systems migration work by validating security and compliance controls; produced clear remediation reports for stakeholders.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <p class="job-title">Equipment Audit / Commercial Representative</p>
+          <p class="job-dates">Mar 2021 – Mar 2022</p>
+        </div>
+        <p class="job-company">Helios Towers Ghana</p>
+        <ul>
+          <li>Validated operational data across 500+ tower sites to support reliable infrastructure lifecycle and field operations.</li>
+          <li>Partnered with engineering on EPA allowances and power optimization, reinforcing environmental and operational discipline at scale.</li>
+          <li>Supported audits, risk/compliance trackers, contract verification, and commercial data management for delivery accountability.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <p class="job-title">IT Support</p>
+          <p class="job-dates">Sep 2017 – Sep 2018</p>
+        </div>
+        <p class="job-company">GRIDCo (Ghana Grid Company Limited)</p>
+        <ul>
+          <li>Delivered hands-on hardware/software support in a national critical-infrastructure environment; assisted backup/restore and Active Directory/Exchange support.</li>
+          <li>Installed patches and anti-malware tooling; supported workstation rollouts and cabling infrastructure work.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <p class="job-title">IT Support (MIS)</p>
+          <p class="job-dates">Mar 2016 – May 2016</p>
+        </div>
+        <p class="job-company">Volta River Authority</p>
+        <ul>
+          <li>Maintained MIS systems and resolved hardware, software, and network issues; supported inventory, backups, and equipment setup.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education &amp; Training</h2>
+      <p class="compact-list">
+        <strong>BSc, Information Technology</strong> — Kwame Nkrumah University of Science and Technology (Expected Jan 2027)<br />
+        <strong>Associate Degree, Information Technology</strong> — Ghana Communication Technology University (Jan 2016)<br />
+        <strong>Training:</strong> Critical Infrastructure Protection (U.S. DHS) · Physical Security / DoD CUI / RMF (DCSA) ·
+        ISO/IEC 27001:2022 Certified Auditor · Project Planning &amp; Risk Management (UC Irvine) · Ethical Hacking (IPMC)
+      </p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Oracle University — OCI Architect Associate</li>
+        <li>Cisco Networking Academy — Network Defense</li>
+        <li>The SecOps Group — Certified Network Security Practitioner</li>
+        <li>LogRhythm (Exabeam) — Platform Administrator</li>
+        <li>LogRhythm (Exabeam) — Security Analyst</li>
+        <li>TÜV SÜD — ISO 27001:2022 Certified Lead Implementer</li>
+        <li>EC-Council — Certified SOC Analyst (CSA)</li>
+        <li>OneTrust — Incident Management Expert</li>
+        <li>TCM Security — Practical Windows Forensics</li>
+        <li>TCM Security — Practical Ethical Hacking</li>
+        <li>Lean Six Sigma White Belt — PMI / Process Management International</li>
+      </ul>
+    </section>
+  </article>
+</body>
+</html>
