@@ -1,20 +1,22 @@
-# Improved Resume — Richard Kwame Appiah
+# Resumes — Richard Kwame Appiah
 
-This folder contains a rewritten, stronger version of the original cybersecurity resume.
+## Google Data Center Operations Manager (Tel Aviv) — recommended for this application
 
-## Files
+See **`google-dcom/`**:
 
 | File | Purpose |
 |------|---------|
-| `Richard_Kwame_Appiah_Resume.pdf` | Ready-to-use PDF (exported from the HTML) |
-| `Richard_Kwame_Appiah_Resume.html` | Print-ready resume — open in a browser → **Print → Save as PDF** |
-| `Richard_Kwame_Appiah_Resume.md` | ATS-friendly Markdown version (easy to paste into job portals) |
-| `original-resume.pdf` | Copy of the uploaded original for reference |
-| `IMPROVEMENTS.md` | What changed and why |
+| `google-dcom/Richard_Kwame_Appiah_Google_DCOM_Resume.pdf` | Downloadable PDF tailored to Google DCOM |
+| `google-dcom/Richard_Kwame_Appiah_Google_DCOM_Resume.html` | Print-ready source |
+| `google-dcom/Richard_Kwame_Appiah_Google_DCOM_Resume.md` | ATS / plain-text version |
+| `google-dcom/TARGETING_NOTES.md` | JD mapping notes |
 
-## How to export PDF
+## General cybersecurity resume
 
-1. Open `Richard_Kwame_Appiah_Resume.html` in Chrome, Edge, or Firefox.
-2. Press **Ctrl+P** (or **Cmd+P** on Mac).
-3. Set destination to **Save as PDF**, margins to **Default** or **None**, and enable **Background graphics** if available.
-4. Save.
+| File | Purpose |
+|------|---------|
+| `Richard_Kwame_Appiah_Resume.pdf` | General cybersecurity PDF |
+| `Richard_Kwame_Appiah_Resume.html` | Print-ready source |
+| `Richard_Kwame_Appiah_Resume.md` | ATS-friendly Markdown |
+| `original-resume.pdf` | Original uploaded resume |
+| `IMPROVEMENTS.md` | Notes on the general rewrite |
